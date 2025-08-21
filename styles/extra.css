@@ -1,0 +1,64 @@
+/* 首页动画元素基础样式 */
+.homepage-scroll-animation .scroll-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.homepage-scroll-animation .scroll-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* 为不同元素设置不同延迟 */
+/*.homepage-scroll-animation .scroll-item:nth-child(1) { transition-delay: 0.1s; }*/
+.homepage-scroll-animation .scroll-item:nth-child(2) { transition-delay: 0.2s; }
+/*.homepage-scroll-animation .scroll-item:nth-child(3) { transition-delay: 0.3s; }*/
+/* 根据需要添加更多 */
+
+
+/* 播放器样式 */
+.md-main__inner iframe {
+  margin: 0 auto;
+  display: block;
+}
+/* 图片容器 - 用于包裹图片和注释 */
+.image-container {
+    margin: 2em auto; /* 上下外边距，自动左右居中 */
+    text-align: center; /* 内部内容居中 */
+    max-width: 80%; /* 限制容器最大宽度 */
+}
+
+/* 居中图片样式（宽度30%） */
+.img-center {
+    display: block;
+    margin: 0 auto 0.5em; /* 底部留出与注释的间距 */
+    width: 50%;
+    height: auto; /* 保持图片比例 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 可选：添加轻微阴影 */
+}
+
+/* 图片下方注释样式 */
+.image-caption {
+    color: #666; /* 注释文字颜色 */
+    font-size: 0.9em; /* 注释文字大小 */
+    line-height: 1.5; /* 行高 */
+    margin: 0; /* 清除默认边距 */
+    padding: 0 1em; /* 左右内边距 */
+    font-style: italic; /* 斜体效果，区分正文 */
+}
+
+.lyric-line {
+  text-align: center;
+  margin: 0.5em 0;  /* 行间距 */
+}
+
+.md-nav__list .md-nav__list .md-nav__list .md-nav__item {
+    display: none !important;
+}
+
+p {
+    text-indent: 2em;  /* 1em ≈ 当前字体1个汉字宽度，2em即两格 */
+    margin: 0.5em 0;   /* 可选：调整段落间距 */
+}
