@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page.is_homepage %}
+    {# 首页特殊布局 #}
+    <div class="homepage-scroll-animation">
+      {{ super() }}
+    </div>
+  {% else %}
+    {# 其他页面保持原样 #}
+    {{ super() }}
+  {% endif %}
+{% endblock %}

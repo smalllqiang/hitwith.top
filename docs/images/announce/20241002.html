@@ -1,0 +1,106 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>梦月茶歇 圆满结束</title>
+<link rel="icon" href="/images/page_icon.jpg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>  
+<!---- start-smooth-scrolling---->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---end-smooth-scrolling-->
+<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!--End-top-nav-script-->
+</head>
+
+<body>
+	<!--start-header-->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/logo.png" alt=""></a>  
+			</div>
+			<!--start-top-nav-->
+			<nav class="top-nav">
+				<ul class="top-nav">
+					<li><a href="../index.html">主页</a></li>&nbsp;
+					<li><a href="../work_idx.html">刊物作品</a></li>&nbsp;
+					<li><a href="../announces.html">社群公告</a></li>&nbsp;
+					<li><a href="../rules.html">社群规约</a></li>&nbsp;
+					<li><a href="../about.html">关于</a></li>&nbsp;
+					<li><a href="../links.html">趣站链接</a></li>&nbsp;
+				</ul>
+				<a href="#" id="pull"><img src="../images/menu-icon.png" title="menu" /></a>
+			</nav>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!--End-header-->
+	
+	<div class="team-gallery">
+		<div class="container">
+			<div class="team-gallery-top" style="border-bottom: 0.5px solid black;">
+				<h3 style="text-align: left;margin-left: 0;">梦月茶歇 圆满结束</h3>
+				<p style="text-align: right;margin-left: 4px;font-size: 18px;">日期：2024-09-28</p>
+				<!-- <div style="text-align: center; margin: 2em 0;">
+				</div> -->
+			</div>
+			<div class="details">
+				<!-- <img src="../images/anchor-svgrepo-com.svg" style="height: 30px;width: 30px;display:block;margin:0 auto;"> -->
+				<p class="main-text">属于我们的东方文化主题交流团会，圆满结束！</p>
+				<p class="main-text">尽管在筹备过程中遇到了一些预料之外的挑战，但正是大家对我们的包容和理解，使得我们能够克服难关，最终呈现这场在秋日海滨的，幻想与浪漫并存的盛会。我们对大家的感谢难以言表！</p>
+				<p class="main-text">再次感谢大家的积极参与与无私支持！</p>
+				<img src="/announce/20241002/log2.png" style="height:230px; width: 230px;display: block;margin:30px auto;">
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+	</div>
+			<!--starts-footer-->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-main">
+						<p>2024-梦环翠海~哈工大威海东方同好会</p>
+						<p>Powered by&copy 2014 w3layouts</p>
+					</div>
+				</div>
+				
+			</div>
+			<!--End-footer-->
+</body>
+</html>

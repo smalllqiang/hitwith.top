@@ -1,0 +1,62 @@
+site_name: "hitwith"
+site_url: https://hitwith.icu
+site_author: "gooog"
+
+
+theme:
+  name: material
+  custom_dir: overrides/
+  icon:
+    logo: material/anchor
+  favicon: /images/icon/page_icon.jpg
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/brightness-7  # 亮色模式图标
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: lime
+      toggle:
+        icon: material/brightness-4  # 暗黑模式图标
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs  # 顶部标签页
+    - navigation.top   # 返回顶部按钮
+    - header.autohide  # 滚动时自动隐藏导航栏
+    - content.tabs.link
+    - content.code.annotate  # 代码块注释
+    - content.tooltips # 悬浮提示
+    - header.autohide  # 注意：这里重复配置了 header.autohide，可保留一个
+    - navigation.sections  # 允许目录分组
+    - toc.integrate       # 让 TOC 集成到侧边栏
+extra_css:
+  - styles/extra.css
+
+extra_javascript:
+  - scripts/custom.js
+  - https://music.163.com/outchain/player?type=2&id=1870510466&auto=0&height=66
+# 导航菜单
+nav:
+  - 主页: index.md
+  - 刊物文章:
+      - 花海灿然，采撷于兹——从凋叶棕《薦》开始: posts/20240818.md
+      - 《祓氟赋》加长版: posts/20240911.md
+      - 何以得全其命: posts/20240912.md
+      - 一种基于東方紅魔郷的日语学习方式: posts/20240914.md
+      - 幽冥与幽明: posts/20241002.md
+      - 从東方看字体: posts/20241010.md
+  - 社群公告:
+      - 梦月茶歇 已策划完成: announce/20240911.md
+  - 关于: about.md
+  - 趣站链接: site.md
+# 扩展插件（可选）
+plugins:
+  - search:
+      enabled: false
+markdown_extensions:
+  - footnotes  # 启用脚注功能
+  - attr_list  # 启用属性列表
