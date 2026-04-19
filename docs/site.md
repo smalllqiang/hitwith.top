@@ -3,7 +3,7 @@ hide:
   - toc        # 隐藏目录
   - navigation 
 ---
-インターネット中の不思議を集めて
+<ruby><rb>インターネット</rb><rt>Internet</rt></ruby>中の不思議を集めて
 <style>
 /* 容器样式重置与基础设置 */
 .team-gallery .container {
@@ -246,6 +246,10 @@ hide:
 				<a class="site" href="https://oameya.com/">
 					<div class="site-logo" style="background-image: url(/images/sites/oameya.png);background-size:70%;"></div>
 					<h2>大飴屋<br>Webサイト</h2>
+				</a>
+				<a class="site" href="https://newmoon.click/">
+					<div class="site-logo" style="background-image: url(https://static.newmoon.click/logo135x135.png);background-size:70%;"></div>
+					<h2>NMWiki</h2>
 				</a>
 				</div>
 
